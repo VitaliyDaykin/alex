@@ -1,0 +1,39 @@
+.bottom-page {
+    display: flex;
+    flex-direction: column;
+}
+
+//====================================================================================================
+.footer {
+    // .footer__container
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: rem(15);
+        @include adaptiveValue("padding-top", 88, 20);
+        @include adaptiveValue("padding-bottom", 88, 20);
+    }
+    // .footer__social
+    &__social {
+        .social__link {
+            color: #656d72;
+            font-size: rem(24);
+            transition: color 0.3s ease 0s;
+            @media (any-hover: hover) {
+                &:hover {
+                    color: $activeColor;
+                }
+            }
+        }
+    }
+    // .footer__copy
+    &__copy {
+        color: #656d72;
+        font-size: rem(14);
+        line-height: math.div(17, 14);
+    }
+}
+
+//====================================================================================================

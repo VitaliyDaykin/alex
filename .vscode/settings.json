@@ -1,0 +1,4 @@
+{
+    "editor.find.autoFindInSelection": "multiline",
+    "editor.find.seedSearchStringFromSelection": "always"
+}
